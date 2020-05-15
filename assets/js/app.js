@@ -1,5 +1,5 @@
 <script>
-var data = t_beg;
+var data = datetime;
  
  
 function download_csv() {
@@ -18,7 +18,7 @@ function download_csv() {
 }
 </script>
  
-<button onclick="download_csv()">Download CSV</button>
+
 
 
 $('#DCbtn').data('DCremoval', 1);
