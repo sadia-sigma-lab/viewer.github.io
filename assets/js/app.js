@@ -1,5 +1,5 @@
-<script>
-var data = datetime;
+
+var data = 1;
  
  
 function download_csv() {
@@ -16,7 +16,6 @@ function download_csv() {
     hiddenElement.download = 'people.csv';
     hiddenElement.click();
 }
-</script>
  
 
 
