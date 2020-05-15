@@ -1,3 +1,26 @@
+<script>
+var data = t_beg;
+ 
+ 
+function download_csv() {
+    var csv = 'Name,Title\n';
+    data.forEach(function(row) {
+            csv += row.join(',');
+            csv += "\n";
+    });
+ 
+    console.log(csv);
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = 'people.csv';
+    hiddenElement.click();
+}
+</script>
+ 
+<button onclick="download_csv()">Download CSV</button>
+
+
 $('#DCbtn').data('DCremoval', 1);
 $('#_60Hz').data("_60Hz", 0);
 $('#_50Hz').data("_50Hz", 0);
